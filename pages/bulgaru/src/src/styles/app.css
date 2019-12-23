@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Ruslan+Display&display=swap');
+
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggestion {
+    flex-grow: 1;
+    width: 500px;
+}
+
+.movie-container {
+    flex-grow: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.movie-info {
+    flex-grow: 1;
+}
+
+.movie-image {
+    flex-grow: 3;
+    min-height: 500px;
+    min-width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index:-1;
+}
+
+.suggestion:hover {
+    background: red;
+    cursor: pointer;
+}
