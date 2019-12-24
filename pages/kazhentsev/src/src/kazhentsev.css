@@ -1,3 +1,6 @@
+body {
+    background-color: rgb(189, 207, 201);
+}
 section {
     padding: 10px;
 }
@@ -25,4 +28,9 @@ h3{
 #chart {
     width: 30%;
     height: 400px;
+}
+#header {
+    text-align: center;
+    font-family: "Monotype Corsiva";
+    font-size: 24px;
 }
