@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "./src/src/index.js",
-  "dependencies": {
-    "cypress": "^3.8.0"
-  },
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/register": "^7.7.7",
