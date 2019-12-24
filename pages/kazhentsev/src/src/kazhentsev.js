@@ -1,6 +1,7 @@
 import './kazhentsev.css';
 import translitModule from './translitModule';
 import countProcessor from './countProcessor';
+import '../node_modules/chart.js/dist/Chart'
 
 document.getElementById("button").onclick = buttonClick;
 
