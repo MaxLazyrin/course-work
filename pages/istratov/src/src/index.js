@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './styles/styles.css';
 'use strict';
 
 function randStart(size,rand){ //Function which set random starting state
