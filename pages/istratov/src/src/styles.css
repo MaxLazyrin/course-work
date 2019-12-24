@@ -1,0 +1,55 @@
+#1{
+  width:70%;  
+}
+.cell{
+    border: 1px solid black;
+    height: 10px;
+    width: 10px;
+    position: relative;
+    float:left;
+}
+#info{
+    display:table;
+    padding:10px;
+}
+.info{
+    padding:5px;
+    
+}
+#controlpanel{
+    padding:10px;
+    display:table;
+    width:100px;
+}
+.control{
+    width:100px;
+    padding:5px;
+    position:relative;
+    display:inline-block;
+    
+}
+table{
+    border-spacing:0 0px; 
+    position:relative;
+    float:left;
+    
+}
+#rand{
+    width:75px;
+}
+label{
+    padding: 2px;
+}
+#finish{
+    font-size: 30px;
+    height: 50px;
+    width: 500px;
+    position:relative;
+    float:left;
+}
+#alive{
+    background-color: red;
+}
+#dead{
+    background-color: white;
+}
