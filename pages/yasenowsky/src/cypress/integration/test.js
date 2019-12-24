@@ -1,6 +1,6 @@
 describe('test', function() {
   it('add man', function() {
-    cy.visit('http://0.0.0.0:9000')
+    cy.visit('http://server:9000')
     cy.get('#add-input').clear().type('Andrew')
     cy.get('#dispersia-input').clear().type('123')
     cy.get('#select-gender').select("Мужской")
@@ -11,7 +11,7 @@ describe('test', function() {
     cy.get('#my_table').find('input').eq(6).should('have.value', 'Мужской')
   })
   it('add woman', function() {
-    cy.visit('http://0.0.0.0:9000')
+    cy.visit('http://server:9000')
     cy.get('#add-input').clear().type('Elizaveta')
     cy.get('#dispersia-input').clear().type('15')
     cy.get('#select-gender').select("Женский")
@@ -22,7 +22,7 @@ describe('test', function() {
     cy.get('#my_table').find('input').eq(6).should('have.value', 'Женский')
   })
   it('delete person', function() {
-    cy.visit('http://0.0.0.0:9000')
+    cy.visit('http://server:9000')
     cy.get('#add-input').clear().type('Elizaveta')
     cy.get('#dispersia-input').clear().type('15')
     cy.get('#select-gender').select("Женский")
@@ -32,7 +32,7 @@ describe('test', function() {
     cy.get('#my_table').find('input').should('have.length', '5')
   })
   it('computation', function() {
-    cy.visit('http://0.0.0.0:9000')
+    cy.visit('http://server:9000')
     cy.get('#add-input').clear().type(' ')
     cy.get('#dispersia-input').clear().type(15)
     cy.get('#add').click()
@@ -40,7 +40,7 @@ describe('test', function() {
     cy.get('#my_table').find('input').eq(9).should('have.value', '10.88051')
   })
   it('color-text', function() {
-    cy.visit('http://0.0.0.0:9000')
+    cy.visit('http://server:9000')
     cy.get("#color-text").type('red')
     cy.get('#my_table').find('input').eq(1).should('have.css', 'border-color', 'rgb(255, 0, 0)')
     cy.get("#color-text").clear()
