@@ -1,0 +1,41 @@
+.QuoteRequester {
+  text-align: center;
+}
+
+.QuoteRequester-logo {
+  height: 40vmin;
+}
+
+.QuoteRequester-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  font-size: calc(50px + 6vmin);
+  color: white;
+}
+
+.QuoteRequester-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  font-family: 'Franklin Gothic Medium';
+  color: white;
+  width: 100%;
+  background-color: red;
+}
+
+.QuoteRequester-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(6px + 2vmin);
+  color: white;
+}
