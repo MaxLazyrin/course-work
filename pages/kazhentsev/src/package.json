@@ -1,0 +1,34 @@
+{
+  "name": "cource_work_kazhentsev",
+  "version": "1.0.0",
+  "description": "Cource work for Software Development Theory",
+  "main": "kazhentsev.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aragornich42/kursovaya.git"
+  },
+  "author": "Vasiliy Kazhentsev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aragornich42/kursovaya/issues"
+  },
+  "homepage": "https://github.com/Aragornich42/kursovaya#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "css-loader": "^3.4.0",
+    "file-loader": "^5.0.2",
+    "mocha": "^6.2.2",
+    "style-loader": "^1.1.1",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "chart.js": "^2.9.3",
+    "html-webpack-plugin": "^3.2.0"
+  }
+}

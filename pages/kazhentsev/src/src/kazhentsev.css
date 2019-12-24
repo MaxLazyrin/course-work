@@ -1,0 +1,28 @@
+section {
+    padding: 10px;
+}
+textarea {
+    width: 50%;
+    height: 200px;
+}
+input {
+    width: 10%;
+    height: 40px;
+}
+h3{
+    margin: 10px;
+}
+/*#loader-identity {
+    display: none;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('loader.gif') 50% 50% no-repeat;
+}*/
+#chart {
+    width: 30%;
+    height: 400px;
+}
