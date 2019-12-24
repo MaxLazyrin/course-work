@@ -50,7 +50,6 @@ class App extends Component {
   }
 
   updateMovieState(movie) {
-    console.log(movie);
     this.setState({
       movie: {
         id: movie.id,
