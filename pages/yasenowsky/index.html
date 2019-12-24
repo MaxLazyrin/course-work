@@ -1,0 +1,36 @@
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+  <body>
+
+<div class = "wrapper">
+  <div class = header><h1>Психология</h1></div>
+    <div id = "go"><div>
+    <div class = "content-flexbox" id ="for_table">
+
+      <div id = "options">
+        <p>Имя<input type="text"  class = "options-for-add" id = "add-input" value="" data-bind='textInput: nameForAdd' ></p>
+        <p>Пол    <select id ="select-gender" data-bind="options: companyForAdd"></select></p>
+        <p>Коэффициент<input type="number" id = "dispersia-input" class = "options-for-add" data-bind='textInput: dispersiaForAdd'></p>
+        <button type="button" disabled = "true" id="add" name="button">Добавить</button>
+        <p>Имя для удаления<input id = "delete-input" data-bind='textInput: nameForDelete'></p>
+        <button type="button"   id="delete" name="button">Удалить</button>
+      </div>
+
+      <div id =nado></div>
+
+      <div id = properties>
+          <p>Цвет каймы<input type="text" data-bind='textInput: colorForCells' ><p>
+          <p>Цвет текста<input type="text" data-bind='textInput: colorForText'><p>
+          <p>Цвет ячейки<input type="text" data-bind='textInput: colorForInCells'><p>
+      </div>
+
+    </div>
+      <div class = chart-flexbox>
+            <div id="piechart"></div>
+      </div>
+
+    </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script type="text/javascript" src="https://knockoutjs.com/downloads/knockout-3.4.0.js"></script><script type="text/javascript" src="builder.js"></script></body>
