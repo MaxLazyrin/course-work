@@ -10,6 +10,11 @@
     width: 500px;
 }
 
+.suggestion-container {
+    border-radius: 25px;
+    background-color: #cccccc;
+}
+
 .movie-container {
     flex-grow: 2;
     display: flex;
@@ -17,7 +22,13 @@
 }
 
 .movie-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
     flex-grow: 1;
+    border-radius: 25px;
+    background-color: #94b8b8;
 }
 
 .movie-image {
@@ -31,6 +42,6 @@
 }
 
 .suggestion:hover {
-    background: red;
+    background: #b3b3b3;
     cursor: pointer;
 }

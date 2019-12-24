@@ -27,18 +27,20 @@ class App extends Component {
   render() {
     return (
       <div className='container'>
-        <Autosuggest className='suggestion'
-          suggestions={this.state.suggestions} 
-          inputProps={{...this.state, onChange: this.onChange}} 
-          onSuggestionsFetchRequested={this.onSuggestionsFetchRequested} 
-          alwaysRenderSuggestions={true} 
-          getSuggestionValue={this.getSuggestionValue} 
-          renderSuggestion={this.renderSuggestion}
-        />
+        <div className='suggestion-container'>
+          <Autosuggest className='suggestion'
+            suggestions={this.state.suggestions} 
+            inputProps={{...this.state, onChange: this.onChange}} 
+            onSuggestionsFetchRequested={this.onSuggestionsFetchRequested} 
+            alwaysRenderSuggestions={true} 
+            getSuggestionValue={this.getSuggestionValue} 
+            renderSuggestion={this.renderSuggestion}
+          />
+        </div>
         <div className='movie-container'>
           <div className='movie-info'>
             <div id='movie-title'>{this.state.movie.title}</div>
-            <div id='movie-rating'>{this.state.movie.vote_average}</div>
+            <div id='movie-rating'>Rating: {this.state.movie.vote_average}</div>
             <div id='movie-overview'>{this.state.movie.overview}</div>
           </div>
           <div className='movie-image' style={{backgroundImage: `url(https://image.tmdb.org/t/p/original/${this.state.movie.poster}?api_key=33507de7c1b19be686f91394950c9a61)`}}></div>
@@ -48,7 +50,6 @@ class App extends Component {
   }
 
   updateMovieState(movie) {
-    console.log(movie);
     this.setState({
       movie: {
         id: movie.id,
