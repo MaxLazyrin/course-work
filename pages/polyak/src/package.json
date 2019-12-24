@@ -1,0 +1,29 @@
+{
+  "name": "LabTRPO",
+  "version": "1.0.0",
+  "description": "lab",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dalshenekuda/LabTRPO.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dalshenekuda/LabTRPO/issues"
+  },
+  "homepage": "https://github.com/dalshenekuda/LabTRPO#readme"
+}
